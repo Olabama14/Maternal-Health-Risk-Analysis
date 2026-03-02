@@ -23,25 +23,23 @@ HeartRate: Beats per minute
 RiskLevel: Categorical risk label (low risk, mid risk, high risk)
 
 ## Univariate Analysis
-## Feature                 Mean      Std Dev     Min         Max
-Age                     29.87      13.47      10.0       70.0
 
-SystolicBP(mmHg)       113.19      18.40      70.0      160.0
+| Feature            | Mean   | Std Dev | Min  | Max  |
+|--------------------|--------|---------|------|------|
+| Age                | 29.87  | 13.47   | 10.0 | 70.0 |
+| SystolicBP (mmHg)  | 113.19 | 18.40   | 70.0 | 160.0|
+| DiastolicBP (mmHg) | 76.46  | 13.88   | 49.0 | 100.0|
+| BS (mg/dL)         | 8.72   | 3.29    | 6.0  | 19.0 |
+| BodyTemp (°F)      | 98.66  | 1.37    | 98.0 | 103.0|
+| HeartRate (bpm)    | 74.30  | 8.08    | 7.0  | 90.0 |
 
-DiastolicBP (mmHg)      76.46      13.88      49.0      100.0
+## RiskLevel Distribution
 
-BS (mg/dL)               8.72       3.29       6.0       19.0
-
-BodyTemp (°F)           98.66       1.37      98.0      103.0
-
-HeartRate (bpm)         74.30       8.08       7.0       90.0
-
-## RiskLevel           Proportion        Count
-High                  40%              406
-
-Mid                   35%              355
-
-Low                   25%              253
+| RiskLevel | Proportion | Count |
+|-----------|------------|-------|
+| High      | 40%        | 406   |
+| Mid       | 35%        | 355   |
+| Low       | 25%        | 253   |
 
 ## Key observations
 Central tendencies place most vitals within expected ranges, with clinically relevant upper tails for SystolicBP and BS.
