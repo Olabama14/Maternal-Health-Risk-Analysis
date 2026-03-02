@@ -1,13 +1,19 @@
 # Maternal Health Risk Analysis
 ## Executive Summary
+
 This project analyzes maternal health data to understand how vital signs relate to pregnancy risk levels. Using Python and Power BI, I explored patterns in blood pressure, blood sugar, age, temperature, and heart rate across 1,014 maternal records. The analysis highlights strong predictors of high‑risk cases, especially elevated blood pressure and blood sugar. Correlation patterns reveal an Age–BP–BS triad that can support early risk stratification. The project provides clinically grounded insights and a foundation for data‑driven maternal health monitoring.
 
 ## Maternal Health Risk Project Overview
+
 This analysis explores maternal health indicators; Age, Blood Pressure, Blood Sugar, Body Temperature, and Heart Rate, to understand how these vitals relate to RiskLevel (low, mid, high). The goal is to identify patterns that may support early detection of high‑risk cases.
+
 ## Data Overview
+
 Rows: 1014
+
 Columns: 7
 ## Parameters: 
+
 Age: Maternal age (years)
 
 SystolicBP: Systolic blood pressure (mmHg)
@@ -64,21 +70,25 @@ This aligns with clinical expectations around hypertension in pregnancy.
 
 ## Blood Sugar (BS)
 Blood sugar shows a clear separation across risk levels:
+
 • 	High risk: BS often > 10
 
 • 	Mid risk: BS between 7–9
 
 • 	Low risk: BS between 6–8
+
 This makes BS a strong independent predictor of risk.
 
 ## Heart Rate
 Heart rate generally ranges between 60–90 bpm.
+
 • 	High‑risk cases show more variability and more elevated values (≥ 85 bpm).
 
 • 	Low‑risk cases cluster around 70–80 bpm.
 
 ## Bivariate Analysis
 ## SystolicBP by RiskLevel: 
+
 High risk group exhibits elevated median and greater spread; mid risk overlaps low risk but has wider variance.
 
 ## Blood Sugar vs Age by RiskLevel: 
@@ -106,22 +116,29 @@ Moderate positive correlation; diastolic pressure tends to increase with age. Us
 Strong positive relationship; both move together and reflect overall BP status. Both can be retained for clinical completeness.
 
 ## Age & BS = 0.47 
+
 Moderate positive correlation; older patients trend toward higher blood sugar. Prioritize glucose screening for older maternal age groups.
 
 ## BodyTemp & BS ≈ -0.10 
+
 Very weak negative relationship; temperature is not a useful predictor of blood sugar here.
 
 ## HeartRate correlations < 0.15 with other vitals 
+
 Heart rate shows weak associations and likely reflects contextual factors. Treat HR as dynamic and evaluate with time-context data where possible.
 
 ## Multivariate implication
+
 Age, BP, and BS form a correlated triad suitable for composite risk scoring.
+
 BodyTemp and HeartRate are weaker predictors and are better treated as supplementary signals.
 
 ## Outlier Detection and Clinical Flags
+
 Primary outliers are elevated SystolicBP (>140 mmHg) and high BS values in the high risk group.
 
 ## Recommendation for flagged records: 
+
 Measurement validation.
 
 Review medication and comorbidities.
@@ -129,6 +146,7 @@ Review medication and comorbidities.
 Follow-up monitoring or intervention.
 
 ## Recommendations
+
 Build a composite risk score using Age SystolicBP DiastolicBP and BS with weighting informed by correlation strengths.
 
 Implement age-stratified screening protocols for glucose and blood pressure.
