@@ -1,3 +1,3 @@
-# Maternal HeaLth Risk Analysis
-Data Analytics Portfolio
+# Maternal Health Risk Analysis
+# Exploratory analysis of maternal health risk factors using Python and visualization.
 
