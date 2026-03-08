@@ -1,7 +1,7 @@
 # Maternal Health Risk Analysis
 ## Executive Summary
 
-This project analyzes maternal health data to understand how vital signs relate to pregnancy risk levels. Using Python and Power BI, I explored patterns in blood pressure, blood sugar, age, temperature, and heart rate across 1,014 maternal records. The analysis highlights strong predictors of high‑risk cases, especially elevated blood pressure and blood sugar. Correlation patterns reveal an Age–BP–BS triad that can support early risk stratification. The project provides clinically grounded insights and a foundation for data‑driven maternal health monitoring.
+This project analyzes maternal health data to understand how vital signs relate to pregnancy risk levels. Using Python, I explored patterns in blood pressure, blood sugar, age, temperature, and heart rate across 1,014 maternal records. The analysis highlights strong predictors of high‑risk cases, especially elevated blood pressure and blood sugar. Correlation patterns reveal an Age–BP–BS triad that can support early risk stratification. The project provides clinically grounded insights and a foundation for data‑driven maternal health monitoring.
 
 ## Maternal Health Risk Project Overview
 
